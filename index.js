@@ -7,8 +7,8 @@ const xlsx = require('xlsx');
 async function scrape() {
   const browser = await puppeteer.launch({headless: false})
   const page = await browser.newPage()
-  url = 'https://www.flashdiner.com/single-collection/5d9c5b45a7b1cc001cbff93f;collection=PIK%20';
-  excelName = 'pik.xlsx'
+  url = 'https://www.flashdiner.com/single-collection/5d997497a7b1cc001cb51476;collection=Senopati';
+  excelName = 'senopati.xlsx'
   await page.goto(url, {waitUntil: "load"});
 
 
